@@ -94,6 +94,8 @@ Ens sortira una imatge semblant a la seguent
 ![Captura de pantalla de 2024-05-03 19-01-47](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/5e204b54-7864-4648-ba31-49ede341f8fd)
 
 
+Si deitges veure mes informacio sobre **FLASK** pots visitar el seguent enllaç https://flask-es.readthedocs.io/
+
 # Iniciar l'aplicatiu
 1. Comencem aciconant l'entorn vitual .venv
 2. Accionemt **FLASK**
