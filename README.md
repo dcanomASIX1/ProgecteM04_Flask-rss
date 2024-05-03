@@ -89,6 +89,9 @@ flask run --debug
 En cas que s'hagi accionat correctament, ja podrem accedir al servidor. Per fer aixó , accedirem a l'**IP** que ens indiqui **flask** en el moment d'accionar el programa. 
 En el nostre cas serà **http://127.0.0.1:5000**
 
+![Captura de pantalla de 2024-05-03 19-01-47](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/5e204b54-7864-4648-ba31-49ede341f8fd)
+
+
 # Iniciar l'aplicatiu
 1. Comencem aciconant l'entorn vitual .venv
 2. Accionemt **FLASK**
