@@ -77,7 +77,7 @@ En aquest cas estem instal·lant tos els programes indicats al arxiu requirement
 
 Un cop fet aixó haurem instal·lat **flask** 
 
-## FLask
+## Flask
 
 La funcionalitat de **flask** en el nostre cas, sera per crer servidors locals on provorem que l'aplicacio que hem creat s'executa i funciona correctament.
 
