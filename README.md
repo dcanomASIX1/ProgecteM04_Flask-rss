@@ -1,5 +1,15 @@
 # Exemple de README
 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=tu_carpeta/index.html">
+    <link rel="canonical" href="https://dcanomASIX1.github.io/ProgecteM04_Flask-rss/templates/index.html">
+</head>
+</html>
+
+
 Això és un [enllaç](https://google.com) i això són **negretes** i *cursiva* i ara ve una llista:
 
 * hola
