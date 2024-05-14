@@ -14,7 +14,9 @@ img {
 body{
     background-color: rgb(248, 204, 199);
 
-  }
-  .nav-item > a:hover {
+}
+
+
+.nav-item > a:hover {
     background-color: rgb(202, 202, 202); /* Cambia #color3 por el color que quieras cuando el ratón pasa por encima */
 }
