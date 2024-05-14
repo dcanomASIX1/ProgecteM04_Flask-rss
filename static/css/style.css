@@ -3,3 +3,18 @@ img {
     height: auto;
 }
 
+.row.lista > div:nth-child(odd) {
+    background-color: rgb(243, 150, 139); /* Cambia #color1 por el color que quieras para las noticias impares */
+}
+
+.row.lista > div:hover {
+    background-color: rgb(202, 202, 202); /* Cambia #color3 por el color que quieras cuando el ratón pasa por encima */
+}
+
+body{
+    background-color: rgb(248, 204, 199);
+
+  }
+  .nav-item > a:hover {
+    background-color: rgb(202, 202, 202); /* Cambia #color3 por el color que quieras cuando el ratón pasa por encima */
+}
