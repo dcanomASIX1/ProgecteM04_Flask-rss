@@ -92,3 +92,22 @@ def get_rss_lavanguardia(seccio):
     
     rss = feedparser.parse(xml)
     return rss
+
+
+def get_rss_elpuntavui(seccio):
+    # MODE REMOT: versió on descarrega l'XML de la web
+    # xml = f"https://www.lavanguardia.com/rss/{seccio}.xml"
+    
+    # MODE LOCAL: versió que fa servir l'XML descarregat
+    xml = f"./rss/elpuntavui/{seccio}.xml"
+    
+    rss = feedparser.parse(xml)
+    return rss
+
+
+
+@app.route('/eldiariavui/<seccio>')
+def eldiariavui(seccio):
+    rss = get_rss_elpuntavui(seccio)
+    return render_template("eldiariavui.html", rss = rss)
+
