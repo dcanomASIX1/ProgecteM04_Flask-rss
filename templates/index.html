@@ -21,45 +21,71 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm  text-center p-3 bg-primary text-bg-primary ">
-        
-        <div class="container-sm col-xxl-4 navbar-expand-lg">
+      <div class="container-sm col-xxl-4 " >
+        <ul class="navbar-nav navbar-expand-sm text-center p-3 bg-primary text-bg-primary justify-content-around p-3">
+        <a class="dropdown-item"  href="/"><i class="fa-solid fa-house"></i></i>Home</a>
+        </ul>
+      </div>
+      <div class="container-sm col-xxl-4  dropdown">
+
+            <ul class="navbar-nav navbar-expand-sm text-center p-3 bg-primary text-bg-primary justify-content-around">
+              <li class="nav-item dropdown text-bg-primary ">
+                <a class="text-bg-primary  nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  La Vanguardia
+                </a>
+
+
           <!-- Links -->
-          <ul class="navbar-nav navbar-expand-sm  text-center p-3 bg-primary text-bg-primary navbar-expand-lg">
-            <li class="nav-item" >
-              <a class="nav-link"  href="/"><i class="fa-solid fa-house"></i></i>Home</a>
+          <ul class=" text-center p-3 bg-primary text-bg-primary dropdown-menu" aria-labelledby="navbarDropdown ">
+
+            <li>
+              <a class="dropdown-item bg-primary text-bg-primary" href="/lavanguardia/deportes"><i class="fa-solid fa-baseball"></i>Deportes</a>
             </li>
-            <li class="nav-item" >
-              <a class="nav-link" href="/lavanguardia/deportes"><i class="fa-solid fa-baseball"></i>Deportes</a>
+            <li>
+              <a class="dropdown-item bg-primary text-bg-primary" href="/lavanguardia/vida"><i class="fas fa-heart"></i> Vida</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/lavanguardia/vida"><i class="fas fa-heart"></i> Vida</a>
+            <li>
+                <a class="dropdown-item bg-primary text-bg-primary" href="/lavanguardia/politica"><i class="fa-solid fa-handshake"></i>Politica</a>
             </li>
-            <li class="nav-item" >
-                <a class="nav-link" href="/lavanguardia/politica"><i class="fa-solid fa-handshake"></i>Politica</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/lavanguardia/motor"><i class="fa-solid fa-motorcycle"></i>Motor</a>
+            <li>
+                <a class="dropdown-item bg-primary text-bg-primary"  href="/lavanguardia/motor"><i class="fa-solid fa-motorcycle"></i>Motor</a>
               
             </li>
           </ul>
+
+
+          </li>
+          </ul>
         </div>
-        <div class="container-sm col-xxl-4 ">
+
+
+        
+
+
+
+        <div class="container-sm col-xxl-4  dropdown">
+          <ul class="navbar-nav navbar-expand-sm text-center p-3 bg-primary text-bg-primary justify-content-around">
+            <li class="nav-item dropdown flex-grow-1 ">
+              <a class="nav-link dropdown-toggle bg-primary text-bg-primary" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ElDiariAvui
+              </a>
+    
           <!-- Links -->
-          <ul class="navbar-nav navbar-expand-sm  text-center p-3 bg-primary text-bg-primary  ">
-            <li class="nav-item" >
-              <a class="nav-link"  href="/"><i class="fa-solid fa-house"></i></i>Home</a>
+          <ul class="text-center p-3 bg-primary text-bg-primary dropdown-menu" aria-labelledby="navbarDropdown ">
+
+            <li >
+              <a class="dropdown-item bg-primary text-bg-primary" href="/eldiariavui/politica"><i class="fa-solid fa-handshake"></i></i>Politica</a>
             </li>
-            <li class="nav-item" >
-              <a class="nav-link" href="/eldiariavui/politica"><i class="fa-solid fa-handshake"></i></i>Politica</a>
+            <li >
+              <a class="dropdown-item bg-primary text-bg-primary" href="/eldiariavui/societat"><i class="fas fa-heart"></i> Societat</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/eldiariavui/societat"><i class="fas fa-heart"></i> Societat</a>
-            </li>
-            <li class="nav-item" >
-                <a class="nav-link" href="/eldiariavui/territori"><i class="fa-solid fa-mountain"></i>Territori</a>
+            <li >
+                <a class="dropdown-item bg-primary text-bg-primary" href="/eldiariavui/territori"><i class="fa-solid fa-mountain"></i>Territori</a>
             </li>
 
           </ul>
+            </li>
+            </ul>
         </div>
       
     </nav>
