@@ -14,6 +14,15 @@
 
       }
 
+      /*
+      a:hover{
+
+        background-color: rgb(122, 13, 13); 
+        color:rgb(248, 204, 199);
+
+      }
+      */
+
 
     </style>
 
@@ -29,7 +38,7 @@
       <div class="container-sm col-xxl-4  dropdown">
 
             <ul class="navbar-nav navbar-expand-sm text-center p-3 bg-primary text-bg-primary justify-content-around">
-              <li class="nav-item dropdown text-bg-primary ">
+              <li class="nav-item dropdown  ">
                 <a class="text-bg-primary  nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   La Vanguardia
                 </a>
@@ -38,17 +47,17 @@
           <!-- Links -->
           <ul class=" text-center p-3 bg-primary text-bg-primary dropdown-menu" aria-labelledby="navbarDropdown ">
 
-            <li>
-              <a class="dropdown-item bg-primary text-bg-primary" href="/lavanguardia/deportes"><i class="fa-solid fa-baseball"></i>Deportes</a>
+            <li >
+              <a class="dropdown-item" href="/lavanguardia/deportes"><i class="fa-solid fa-baseball"></i>Esports</a>
+            </li >
+            <li >
+              <a class="dropdown-item " href="/lavanguardia/vida"><i class="fas fa-heart"></i> Vida</a>
             </li>
-            <li>
-              <a class="dropdown-item bg-primary text-bg-primary" href="/lavanguardia/vida"><i class="fas fa-heart"></i> Vida</a>
+            <li >
+                <a class="dropdown-item " href="/lavanguardia/politica"><i class="fa-solid fa-handshake"></i>Politica</a>
             </li>
-            <li>
-                <a class="dropdown-item bg-primary text-bg-primary" href="/lavanguardia/politica"><i class="fa-solid fa-handshake"></i>Politica</a>
-            </li>
-            <li>
-                <a class="dropdown-item bg-primary text-bg-primary"  href="/lavanguardia/motor"><i class="fa-solid fa-motorcycle"></i>Motor</a>
+            <li >
+                <a class="dropdown-item "  href="/lavanguardia/motor"><i class="fa-solid fa-motorcycle"></i>Motor</a>
               
             </li>
           </ul>
@@ -74,13 +83,13 @@
           <ul class="text-center p-3 bg-primary text-bg-primary dropdown-menu" aria-labelledby="navbarDropdown ">
 
             <li >
-              <a class="dropdown-item bg-primary text-bg-primary" href="/eldiariavui/politica"><i class="fa-solid fa-handshake"></i></i>Politica</a>
+              <a class="dropdown-item" href="/eldiariavui/politica"><i class="fa-solid fa-handshake"></i>Politica</a>
             </li>
             <li >
-              <a class="dropdown-item bg-primary text-bg-primary" href="/eldiariavui/societat"><i class="fas fa-heart"></i> Societat</a>
+              <a class="dropdown-item " href="/eldiariavui/societat"><i class="fas fa-heart"></i> Societat</a>
             </li>
             <li >
-                <a class="dropdown-item bg-primary text-bg-primary" href="/eldiariavui/territori"><i class="fa-solid fa-mountain"></i>Territori</a>
+                <a class="dropdown-item " href="/eldiariavui/territori"><i class="fa-solid fa-mountain"></i>Territori</a>
             </li>
 
           </ul>
@@ -89,33 +98,66 @@
         </div>
       
     </nav>
-    <p>Mira les noticies de La Vanguardia:</p>
 
+    <h1></h1>
     <div class="table-responsive container-fluid">
     <table class="table table-hover table-striped border border-black">
-    <tr>
-    <td>
-        <a href="/lavanguardia/deportes">Deportes</a>
-    </td>
+      <tr>
+        <td>
+          
+         </td> 
+        <td class="border-black">
+            <h1>La Vanguardia</h1>
+        </td>
+        <td>
+            <h1>El diari ElDiariAvui</h1>
+        </td>
+      </tr>
+      <tr>
+      <td class="border-black">
+        1
+       </td> 
+      <td class="border-black">
+          <a href="/lavanguardia/deportes">Esports</a>
+      </td>
+      <td>
+          <a href="/eldiariavui/politica">Politica</a>
+      </td>
     </tr>
     <tr>
-    <td>
-        <a href="/lavanguardia/vida">Vida</a>
+      <td class="border-black">
+        2
+       </td>
+      <td class="border-black">
+          <a href="/lavanguardia/vida">Vida</a>
+      </td>
+      <td class="border-black">
+          <a href="/eldiariavui/societat">Societat</a>
+      </td>
     </tr>
-    </td>
     <tr>
-    <td> 
-        <a class="asd" href="/lavanguardia/politica">Politica</a>
+      <td class="border-black">
+        3
+       </td>
+      <td class="border-black"> 
+          <a class="asd" href="/lavanguardia/politica">Politica</a>
+      </td>
+      <td class="border-black"> 
+          <a href="/eldiariavui/territori">Terriotri</a>
+      </td>
     </tr>
-    </td>
     <tr>
-    <td>
-        <a href="/lavanguardia/motor">Motor</a>
+      <td class="border-black">
+        4
+       </td>
+        <td class="border-black">
+            <a href="/lavanguardia/motor">Motor</a>
+        </td>
+        <td>
+         </td> 
     </tr>
-    </td>
     </table>
     </div>
-    <img src="/static/img/diaris.jpg" alt="Diaris" />
 
 
 
@@ -139,17 +181,17 @@
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/static/img/tat.jpg" alt="Los Angeles" class="d-block w-100">
+            <img src="/static/img/futbol.jpg" alt="Los Angeles" class="d-block w-100">
             <div class="text-center d-none d-md-block mt-5">
         
 
             </div>
           </div>
           <div class="carousel-item mb-5">
-            <img src="/static/img/hasbula.jpg" alt="Chicago" class="d-block w-100">
+            <img src="/static/img/politica.jpg" alt="Chicago" class="d-block w-100">
           </div>
           <div class="carousel-item mb-5">
-            <img src="/static/img/bober.jpg" alt="Chicago" class="d-block w-100">
+            <img src="/static/img/NiñoMurcielago.jpg" alt="Chicago" class="d-block w-100">
           </div>
 
         </div>

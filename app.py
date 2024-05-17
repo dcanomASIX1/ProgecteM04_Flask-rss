@@ -96,7 +96,7 @@ def get_rss_lavanguardia(seccio):
 
 def get_rss_elpuntavui(seccio):
     # MODE REMOT: versió on descarrega l'XML de la web
-    # xml = f"https://www.lavanguardia.com/rss/{seccio}.xml"
+    # xml = f"http://www.elpuntavui.cat/{seccio}.feed?type=rss"
     
     # MODE LOCAL: versió que fa servir l'XML descarregat
     xml = f"./rss/elpuntavui/{seccio}.xml"
@@ -108,6 +108,15 @@ def get_rss_elpuntavui(seccio):
 
 @app.route('/eldiariavui/<seccio>')
 def eldiariavui(seccio):
+
+
+
+
     rss = get_rss_elpuntavui(seccio)
+
+
+
+
+
     return render_template("eldiariavui.html", rss = rss)
 
