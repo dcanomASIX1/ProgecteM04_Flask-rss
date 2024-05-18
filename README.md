@@ -137,6 +137,8 @@ En este caso seria:
 
 ```
 
+**Si deseas saber mas sobre Jinja2 puedes visitar el siguiente enlace** https://jinja.palletsprojects.com/en/3.1.x/
+ 
 # Pasos a seguir para iniciar el aplicativo
 
 1. Empezamos aciconando el entorno vitual .venv
