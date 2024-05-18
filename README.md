@@ -95,7 +95,7 @@ A continuacion, se emplea el metodo return. En este se indica la plantilla que s
 
 **ej**
 
-```pyhon3
+```python3
 
 @app.route("/demo4") #Ruta mediante la qual la función se activa
 def demo4(): #Nombre de la función
