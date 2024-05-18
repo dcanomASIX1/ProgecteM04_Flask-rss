@@ -72,7 +72,7 @@ Este emplea variables las quales de declaran de la siguiente forma --> {{ variab
 Ademas se pueden emplear otras estructuras de programacion como: if o for
 
 -**if**
-```
+```html
 
     {% if (edat >= 18) %}
         <h3>{{nom}} és major d'edat</h3>
@@ -82,7 +82,8 @@ Ademas se pueden emplear otras estructuras de programacion como: if o for
 
 ```
 -**for**
-```
+```html
+
     {% for i in range(edat) %}
         <p>No té {{i}} anys</p>
     {% endfor %}
@@ -94,7 +95,7 @@ A continuacion, se emplea el metodo return. En este se indica la plantilla que s
 
 **ej**
 
-```pyhon3
+```pyhon
 
 @app.route("/demo4") ---> Ruta mediante la qual la función se activa
 def demo4(): ---> Nombre de la función
@@ -107,7 +108,8 @@ def demo4(): ---> Nombre de la función
 
 finalmente tendiramos la plantilla correspondiente con sus variables . 
 En este caso seria:
-```
+```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -141,7 +143,8 @@ En este caso seria:
 2. Accionem **FLASK**
 # Mode remot o local
 Para cambiar entre el modo local(Empleando el RSS descargado) o el modo remoto (accedemos al RSS desdde la URL). Ejecutamos las siguientes funciones del archivo app.py
-```
+```python
+
 @app.route('/lavanguardia/<seccio>')
 def lavanguardia(seccio):
     rss = get_rss_lavanguardia(seccio)
@@ -177,6 +180,7 @@ A continuacio veremos varias de sus utilidades, además de como aplicarlo
 2. Al finalizar el html añadimos el java script de bootstrap
 **ej de estructura base**
 ```html
+
 <!doctype html>
 <html lang="ca">
 
@@ -216,6 +220,7 @@ El container te deja un margen dependiendo del tamaño de la pantaña, este vari
 https://getbootstrap.com/docs/5.3/layout/containers/
 **ej.**
 ``` html
+
     <div class="container-lg">
         <h1>container-lg!</h1>
         <p>I aquest és un container normal</p>
@@ -223,6 +228,7 @@ https://getbootstrap.com/docs/5.3/layout/containers/
             perferendis harum laborum quae fugiat. Sequi explicabo labore ad blanditiis, error consequatur assumenda a
             delectus porro.</p>
     </div>
+
 ```
 
 
@@ -247,8 +253,10 @@ Si deseas cambiar las clases predefinidas puesdes modificar el archivo SAS
 en caso de queres modivicar el fondo añadimos un background **bg-<'nombredecolor'>**
 
 **ej**
-```
+```html
+
 <div class="container bg-secondary text-bg-secondary">
+
 ```
 
 para mas informacion visitar 
@@ -262,7 +270,8 @@ p-2
 
  **ej**
 
- ```
+ ```html
+
  <div class="container bg-secondary text-bg-secondary mt-5 p-2">
  
  ```
@@ -291,7 +300,7 @@ https://getbootstrap.com/docs/5.3/content/typography/
 
  ## Borders
 Sirve para ñadir bordes a las etiquetas 
-```
+```html
 
 <span class="border"></span>
 <span class="border-top"></span>
@@ -301,7 +310,8 @@ Sirve para ñadir bordes a las etiquetas
 ```
 **ej**
 
-```
+```html
+
     <div class="container mt-5 p-2 border border-danger">
         <h1>container-sm</h1>
         <p>I aquest és un container normal</p>
@@ -309,6 +319,7 @@ Sirve para ñadir bordes a las etiquetas
             perferendis harum laborum quae fugiat. Sequi explicabo labore ad blanditiis, error consequatur assumenda a
             delectus porro.</p>
     </div>
+
 ```
 
 
@@ -321,7 +332,7 @@ Si se indican mas columnas de las existetnes las sobrantes iran en la proxima li
 
 **Ejemplo de aplicacion**
 
-```
+```html
 
 <div class="col-md-6 col-lg-4 col-xl-3 border">
     Banana
@@ -337,7 +348,7 @@ se empleara la clase bootstrap **.navbar**
 
 **ej**
 
-```
+```html
 
 <nav class="navbar navbar-expand-sm bg-light">
 
