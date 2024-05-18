@@ -265,7 +265,9 @@ en caso de queres modivicar el fondo añadimos un background **bg-<'nombredecolo
 <div class="container bg-secondary text-bg-secondary">
 
 ```
+
 Algunos ejemplos 
+
 ![image](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/78fd3856-4591-4dd1-9dcb-03d5fe9e2240)
 
 
@@ -306,6 +308,13 @@ Subclases especiales predefinidas del H1 al H6
 
 y muchos mas existentes
 
+ejemplos de textos bootstrap
+
+
+![image](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/5d5d3ae3-c523-4a73-a044-d2efbcf4e3c0)
+
+
+
 para mas informacion visitar:
 https://getbootstrap.com/docs/5.3/content/typography/
 
@@ -337,6 +346,7 @@ Sirve para añadir bordes a los contenedores, etc.
 
 ```
 possibles ejemplos de bordes
+
 ![image](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/d5392621-d65f-49ed-a8c8-36f17e2c4197)
 
 
@@ -371,6 +381,7 @@ Ejemplo de Grid simple
 
 
 ```
+
 ![image](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/119872db-658b-4dc1-9e82-feb4de3bd67b)
 
 
