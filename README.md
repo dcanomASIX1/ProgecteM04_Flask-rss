@@ -265,6 +265,9 @@ en caso de queres modivicar el fondo añadimos un background **bg-<'nombredecolo
 <div class="container bg-secondary text-bg-secondary">
 
 ```
+Algunos ejemplos 
+![image](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/78fd3856-4591-4dd1-9dcb-03d5fe9e2240)
+
 
 para mas informacion visitar 
  https://getbootstrap.com/docs/5.3/utilities/colors/
@@ -333,7 +336,13 @@ Sirve para añadir bordes a los contenedores, etc.
     </div>
 
 ```
+possibles ejemplos de bordes
+![image](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/d5392621-d65f-49ed-a8c8-36f17e2c4197)
 
+
+
+Enlace por si deseas obtener mas información
+https://getbootstrap.com/docs/5.0/utilities/borders/
 
  ## Grid
 12 columnas predefinidas 
@@ -343,6 +352,32 @@ Dentro de las columnas añadimos **col** para las columnas
 
 Si se indican mas columnas de las existetnes las sobrantes iran en la proxima linea
 
+Ejemplo de Grid simple
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
+</div>
+
+
+```
+![image](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/119872db-658b-4dc1-9e82-feb4de3bd67b)
+
+
+
+
+Enlace por si deseas obtener mas información
+https://getbootstrap.com/docs/5.0/layout/grid/
 
 **Ejemplo de aplicacion**
 
@@ -353,6 +388,9 @@ Si se indican mas columnas de las existetnes las sobrantes iran en la proxima li
 </div>
 
 ```
+
+
+Enlace por si deseas obtener mas información
 ## Navbar
 Conocidas como barras de navegacion
 Etiquetas: div o nav (preferible emplear la etiqueta **nav**)
@@ -392,7 +430,13 @@ ejemplo nav-bar simple
 
 
 
-per mes informacio visitar https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
+Enlace por si deseas obtener mas información
+
+https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
+
+https://getbootstrap.com/docs/5.0/components/navbar/
+
+
 ## Tables
 
 classs .table en la  etiqueta ".table"
@@ -407,3 +451,6 @@ https://getbootstrap.com/docs/5.3/content/tables/
 
 ![image](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/0e55df77-1d88-4b1f-99a8-fa93f21c1197)
 
+Enlace por si deseas obtener mas información
+
+https://getbootstrap.com/docs/5.3/content/tables/
