@@ -66,6 +66,75 @@ Nos saldrá una imagen parecida a la siguiente
 
 Si deseas ver más información sobre **FLASK** puedes visitar el siguiente enlace https://flask-es.readthedocs.io/
 
+### Jinja2
+És el motor que emplea flask para hacer de "traductor" entre el app.py( El archivo principal de python ) y el HTML.
+Este emplea variables las quales de declaran de la siguiente forma --> {{ variable }}
+Ademas se pueden emplear otras estructuras de programacion como: if o for
+
+-**if**
+```
+
+    {% if (edat >= 18) %}
+        <h3>{{nom}} és major d'edat</h3>
+    {% else %}
+        <h3>{{nom}} és menor d'edat</h3>
+    {% endif %}
+
+```
+-**for**
+```
+    {% for i in range(edat) %}
+        <p>No té {{i}} anys</p>
+    {% endfor %}
+
+```
+#### Traspaso de variables en jinja
+Las variables en un principio se obtendran del archivo app.py. Cada funcion, es activada al buscar la ruta indicada en su app.route. Dentro de cada funcion, se declararan las variables de la misma y de donde se obtienen, existen varias opciones como podrian ser : obtenerlas de un formulario anterior o que fuesen predeterminadas, etc.
+A continuacion, se emplea el metodo return. En este se indica la plantilla que sera renderizada, ademas de las variables que portara la plantilla renderizada i la variable de la funcion respectivamente.
+
+**ej**
+
+```
+
+@app.route("/demo4") ---> Ruta mediante la qual la función se activa
+def demo4(): ---> Nombre de la función
+    nom = request.args.get('nom', default = "Desconegut/a", type = str) --->variable nom de la función
+    edat = request.args.get('edat', default = 0, type = int) ---> --->variable edat de la función
+    return render_template("exemples/demo/edat.html", nom = nom, edat = edat) ---> indicamos la plantilla que renderizamos, además de la variable de la plantilla y la variable de la funcion a la que hace referencia respectivamente
+
+
+```
+
+finalmente tendiramos la plantilla correspondiente con sus variables . 
+En este caso seria:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edat</title>
+</head>
+<body>
+    <h1>Pàgina de {{nom}}</h1>
+    {% if (edat >= 18) %}
+        <h3>{{nom}} és major d'edat</h3>
+    {% else %}
+        <h3>{{nom}} és menor d'edat</h3>
+    {% endif %}
+
+    {% for i in range(edat) %}
+        <p>No té {{i}} anys</p>
+    {% endfor %}
+    
+    <p>Té {{edat}} anys!!!</p>
+
+</body>
+</html>
+
+
+```
+
 # Pasos a seguir para iniciar el aplicativo
 
 1. Empezamos aciconando el entorno vitual .venv
