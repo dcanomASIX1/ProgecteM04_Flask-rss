@@ -246,6 +246,7 @@ Elemento del header que adapta los containers al tamaño de la pantalla
 
 ## Control de colores
 las etiquetas para el control de colores son : **.text-<'escrivim la clase desitjada'>**
+
 **ej**
 
 ```html
@@ -306,7 +307,9 @@ para mas informacion visitar:
 https://getbootstrap.com/docs/5.3/content/typography/
 
  ## Borders
-Sirve para ñadir bordes a las etiquetas 
+Sirve para añadir bordes a los contenedores, etc.
+
+**ejemplos de posibles bordes**
 
 ```html
 
