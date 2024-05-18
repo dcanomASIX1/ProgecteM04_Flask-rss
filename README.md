@@ -171,7 +171,8 @@ Permite trabajar con:
 - CSS
 - html
 - javascript
-
+A continuacio veremos varias de sus utilidades, además de como aplicarlo
+## Como aplicarlo
 1. Cargamos CSS de bootstrap en el heading
 2. Al finalizar el html añadimos el java script de bootstrap
 **ej de estructura base**
