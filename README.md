@@ -140,8 +140,8 @@ En este caso seria:
 # Pasos a seguir para iniciar el aplicativo
 
 1. Empezamos aciconando el entorno vitual .venv
-2. Accionem **FLASK**
-# Mode remot o local
+2. Accionamos **FLASK**
+# Modo remoto o local
 Para cambiar entre el modo local(Empleando el RSS descargado) o el modo remoto (accedemos al RSS desdde la URL). Ejecutamos las siguientes funciones del archivo app.py
 ```python3
 
