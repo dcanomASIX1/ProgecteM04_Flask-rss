@@ -221,6 +221,7 @@ A continuacio veremos varias de sus utilidades, además de como aplicarlo
 El container te deja un margen dependiendo del tamaño de la pantaña, este varia dependiendo del tamaño de la pantalla, para mas informacion visitar el enlace.
 https://getbootstrap.com/docs/5.3/layout/containers/
 **ej.**
+
 ``` html
 
     <div class="container-lg">
@@ -236,6 +237,7 @@ https://getbootstrap.com/docs/5.3/layout/containers/
 
 ## Viewport meta
 Elemento del header que adapta los containers al tamaño de la pantalla
+
 ```html
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -245,6 +247,7 @@ Elemento del header que adapta los containers al tamaño de la pantalla
 ## Control de colores
 las etiquetas para el control de colores son : **.text-<'escrivim la clase desitjada'>**
 **ej**
+
 ```html
 
 <div class="container bg-secondary text-bg-secondary">
@@ -255,6 +258,7 @@ Si deseas cambiar las clases predefinidas puesdes modificar el archivo SAS
 en caso de queres modivicar el fondo añadimos un background **bg-<'nombredecolor'>**
 
 **ej**
+
 ```html
 
 <div class="container bg-secondary text-bg-secondary">
@@ -271,6 +275,7 @@ añadimos la letra al final de la clase con un guion y el numero deseado
 p-2
 
  **ej**
+ 
 
  ```html
 
@@ -302,6 +307,7 @@ https://getbootstrap.com/docs/5.3/content/typography/
 
  ## Borders
 Sirve para ñadir bordes a las etiquetas 
+
 ```html
 
 <span class="border"></span>
@@ -310,6 +316,7 @@ Sirve para ñadir bordes a las etiquetas
 <span class="border-bottom"></span>
 <span class="border-start"></span>
 ```
+
 **ej**
 
 ```html
@@ -330,7 +337,9 @@ Sirve para ñadir bordes a las etiquetas
 - **Row** para las filas
 Dentro de las columnas añadimos **col** para las columnas
 
+
 Si se indican mas columnas de las existetnes las sobrantes iran en la proxima linea
+
 
 **Ejemplo de aplicacion**
 
