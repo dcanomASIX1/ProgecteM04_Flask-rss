@@ -94,7 +94,7 @@ A continuacion, se emplea el metodo return. En este se indica la plantilla que s
 
 **ej**
 
-```
+```pyhon3
 
 @app.route("/demo4") ---> Ruta mediante la qual la función se activa
 def demo4(): ---> Nombre de la función
@@ -176,7 +176,7 @@ A continuacio veremos varias de sus utilidades, además de como aplicarlo
 1. Cargamos CSS de bootstrap en el heading
 2. Al finalizar el html añadimos el java script de bootstrap
 **ej de estructura base**
-```
+```html
 <!doctype html>
 <html lang="ca">
 
@@ -215,7 +215,7 @@ A continuacio veremos varias de sus utilidades, además de como aplicarlo
 El container te deja un margen dependiendo del tamaño de la pantaña, este varia dependiendo del tamaño de la pantalla, para mas informacion visitar el enlace.
 https://getbootstrap.com/docs/5.3/layout/containers/
 **ej.**
-```
+``` html
     <div class="container-lg">
         <h1>container-lg!</h1>
         <p>I aquest és un container normal</p>
@@ -228,15 +228,19 @@ https://getbootstrap.com/docs/5.3/layout/containers/
 
 ## Viewport meta
 Elemento del header que adapta los containers al tamaño de la pantalla
-```
+```html
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 ```
 
 ## Control de colores
 las etiquetas para el control de colores son : **.text-<'escrivim la clase desitjada'>**
 **ej**
-```
+```html
+
 <div class="container bg-secondary text-bg-secondary">
+
 ```
 Si deseas cambiar las clases predefinidas puesdes modificar el archivo SAS
 
@@ -358,6 +362,7 @@ se empleara la clase bootstrap **.navbar**
 en caso de logo se puede usar navbar-brand
 
 ejemplo nav-bar simple
+
 ![image](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/607b3026-d3af-4463-b6b7-a60aa5d4ce1c)
 
 
