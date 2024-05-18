@@ -287,6 +287,10 @@ se empleara la clase bootstrap **.navbar**
 
 en caso de logo se puede usar navbar-brand
 
+ejemplo nav-bar simple
+![image](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/607b3026-d3af-4463-b6b7-a60aa5d4ce1c)
+
+
 
 per mes informacio visitar https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
 ## Tables
@@ -300,3 +304,6 @@ https://getbootstrap.com/docs/5.3/content/tables/
 .table-hover --> añade indicaciones al marcar con el raton sobre la tabla
 
 .table-bordered --> Añade bordes a las tablas 
+
+![image](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/0e55df77-1d88-4b1f-99a8-fa93f21c1197)
+
