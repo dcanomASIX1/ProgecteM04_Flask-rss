@@ -1,36 +1,8 @@
-# Exemple de README
+# Despliegue de nuestro entorno virtual
+## Instalación de pip
 
-Això és un [enllaç](https://google.com) i això són **negretes** i *cursiva* i ara ve una llista:
 
-* hola
-* que
-* tal
-
-Potser vols una llista numerada:
-
-1. tot
-2. bé
-3. gràcies
-
-## Un títol de nivell 2
-
-I un troç de codi
-
-    apt-get install virus
-
-O aixó també és un troç de codi:
-
-```python
-a = 2 + 3
-```
-També pots integrar-ho `a=2` al paràgraf.
-
----
-
-# Desplegament del nostre entorn virtual
-## Instal·lacio de pip
-
-Començarem instal·lant el paquet pip. Aquest s'empelara per instal·lar al nostre entron virtual que crearem a cotinuació.
+Empezaremos instalando el paquete pip. Este se empelará para instalar a nuestro entrono virtual que crearemos a cotinuación.
 
 ```
 
@@ -40,9 +12,9 @@ apt install pip
 
 
 
-## Creacio del nostre entorn virtual
-**Els seguents comandaments seran executats en python.**
-1. Comencem creant el nostre entron vitual on treballarem. Per poder fer aixo executarem el comandament:
+## Creación de nuestro entorno virtual
+**Los siguientes comandos serán ejecutados en python.**
+1. Empezamos creando nuestro entron vitual donde trabajaremos. Para poder hacer esto ejecutaremos el mando:
 
 ```
 
@@ -50,22 +22,22 @@ python3 -m venv .venv
 
 ```
 
-2. A continuacio activarem l'entorn virtual.Per poder fer aixo executarem el comandament:
+2. A continuación activaremos el entorno virtual.Para poder hacer esto ejecutaremos el mando:dament:
 ```
 
 source .venv/bin/activate
 
 ```
-3. Un cop executada aquesta comanda podrem observar si tenim l'entorn activar per el nostre promt.
+3. Una vez ejecutado este pedido podremos observar si tenemos el entorno activado por nuestro promt.
 
 
 **(.venv) tarda@PC-AULA:~/Documents/ASIX_M04/UF3/Progecte/jmirinformatica 1asixdaw-m0**
 
 
-### Instal·lacio de tots els programes requerits
-Si desitgem instal·lar tots els programes d'alun altre entorn virtual, pordem emplear el programa instal·lat anteriorment ( **pip**) 
+### Instalación de todos los programas requeridos
+Si deseamos instalar todos los programas de otro entorno virtual, podemos emplear el programa instalado anteriormente ( **pip**)
 
-per aixó executarem la seguent comanda
+por eso ejecutaremos el siguiente pedido
 
 ```
 
@@ -73,35 +45,56 @@ pip install -r requeriments.txt
 
 ```
 
-En aquest cas estem instal·lant tos els programes indicats al arxiu requirements.txt (Aquesta es una de grans util·litats de **pip**)
+En este caso estamos instalando todos los programas indicados en el archivo requirements.txt (Esta es una de grandes utilidades de **pip**)
 
-Un cop fet aixó haurem instal·lat **flask** 
+Una vez hecho esto habremos instalado **flask**
 
 ## Flask
+La funcionalidad de **flask** en nuestro caso, será para crear servidores locales donde probaremos que la aplicación que hemos creado se ejecuta y funciona correctamente.
 
-La funcionalitat de **flask** en el nostre cas, sera per crer servidors locals on provorem que l'aplicacio que hem creat s'executa i funciona correctament.
-
-Per crear aquest servidor de provers, accionarem la seguent comanda.
+Para crear este servidor de proverso, accionaremos el siguiente pedido.
 ```
 flask run --debug
 ```
+En caso de que se haya accionado correctamente, ya podremos acceder al servidor. Para ello, accederemos al **IP** que nos indique **flask** en el momento de accionar el programa.
+En nuestro caso será **http://127.0.0.1:5000**
 
-En cas que s'hagi accionat correctament, ja podrem accedir al servidor. Per fer aixó , accedirem a l'**IP** que ens indiqui **flask** en el moment d'accionar el programa. 
-En el nostre cas serà **http://127.0.0.1:5000**
 
-
-Ens sortira una imatge semblant a la seguent
+Nos saldrá una imagen parecida a la siguiente
 ![Captura de pantalla de 2024-05-03 19-01-47](https://github.com/dcanomASIX1/ProgecteM04_Flask-rss/assets/165805335/5e204b54-7864-4648-ba31-49ede341f8fd)
 
 
-Si deitges veure mes informacio sobre **FLASK** pots visitar el seguent enllaç https://flask-es.readthedocs.io/
+Si deseas ver más información sobre **FLASK** puedes visitar el siguiente enlace https://flask-es.readthedocs.io/
 
-# Iniciar l'aplicatiu
-1. Comencem aciconant l'entorn vitual .venv
-2. Accionemt **FLASK**
+# Pasos a seguir para iniciar el aplicativo
 
+1. Empezamos aciconando el entorno vitual .venv
+2. Accionem **FLASK**
 # Mode remot o local
-<<<<<<< HEAD
+Para cambiar entre el modo local(Empleando el RSS descargado) o el modo remoto (accedemos al RSS desdde la URL). Ejecutamos las siguientes funciones del archivo app.py
+```
+@app.route('/lavanguardia/<seccio>')
+def lavanguardia(seccio):
+    rss = get_rss_lavanguardia(seccio)
+    return render_template("lavanguardia.html", rss = rss)
+
+def get_rss_lavanguardia(seccio):
+    # MODE REMOT: versió on descarrega l'XML de la web
+    # xml = f"https://www.lavanguardia.com/rss/{seccio}.xml"
+    
+    # MODE LOCAL: versió que fa servir l'XML descarregat
+    xml = f"./rss/lavanguardia/{seccio}.xml"
+    
+    rss = feedparser.parse(xml)
+    return rss
+
+```
+
+La primera sera  llamada  al clicar en la pagina deseada cogiendo el archivo RSS mediante la funcion **get_rss_lavanguardia(seccio)**. Al llamar a esta segunda función, esta sera la que coja al archivo RSS. Dependiendo del que este comentado escogera uno o el otro.
+
+Cabe recalcar dos cosas
+1. No se puedem emplear los dos metodos a la vez, **se debe tener siemre almenos 1 metodo comentado**
+2. No todos los enlaces a RSS son iguales pueden variar dependiendo del diario asi que ten cuidado a la hora de indicarlos
 
 # Bootstrap
 Framework,clase de libreria predefinida, que permite la enmaquetacion mediante
