@@ -97,11 +97,11 @@ A continuacion, se emplea el metodo return. En este se indica la plantilla que s
 
 ```pyhon3
 
-@app.route("/demo4") ---> Ruta mediante la qual la función se activa
-def demo4(): ---> Nombre de la función
-    nom = request.args.get('nom', default = "Desconegut/a", type = str) --->variable nom de la función
-    edat = request.args.get('edat', default = 0, type = int) ---> --->variable edat de la función
-    return render_template("exemples/demo/edat.html", nom = nom, edat = edat) ---> indicamos la plantilla que renderizamos, además de la variable de la plantilla y la variable de la funcion a la que hace referencia respectivamente
+@app.route("/demo4") #Ruta mediante la qual la función se activa
+def demo4(): #Nombre de la función
+    nom = request.args.get('nom', default = "Desconegut/a", type = str) #variable nom de la función
+    edat = request.args.get('edat', default = 0, type = int) #variable edat de la función
+    return render_template("exemples/demo/edat.html", nom = nom, edat = edat) #indicamos la plantilla que renderizamos, además de la variable de la plantilla y la variable de la funcion a la que hace referencia respectivamente
 
 
 ```
