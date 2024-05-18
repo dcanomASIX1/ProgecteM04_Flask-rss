@@ -239,6 +239,64 @@ Sirve para ñadir bordes a las etiquetas
 
 
  ## Grid
- ## Navbar
- ## Tables
+12 columnas predefinidas 
+- **Row** para las filas
+Dentro de las columnas añadimos **col** para las columnas
 
+Si se indican mas columnas de las existetnes las sobrantes iran en la proxima linea
+
+**Ejemplo de aplicacion**
+
+```
+
+<div class="col-md-6 col-lg-4 col-xl-3 border">
+    Banana
+</div>
+
+```
+## Navbar
+Conocidas como barras de navegacion
+Etiquetas: div o nav (preferible emplear la etiqueta **nav**)
+se empleara la clase bootstrap **.navbar**
+.navbar-expand --> indica cuando se expande o colapsa 
+.navbar-nav
+
+**ej**
+
+```
+
+<nav class="navbar navbar-expand-sm bg-light">
+
+  <div class="container-fluid">
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+```
+
+en caso de logo se puede usar navbar-brand
+
+
+per mes informacio visitar https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
+## Tables
+
+classs .table en la  etiqueta ".table"
+
+https://getbootstrap.com/docs/5.3/content/tables/
+
+.Table-stripped --> colorea la tabla
+
+.table-hover --> añade indicaciones al marcar con el raton sobre la tabla
+
+.table-bordered --> Añade bordes a las tablas 
