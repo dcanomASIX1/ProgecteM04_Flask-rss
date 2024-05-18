@@ -143,7 +143,7 @@ En este caso seria:
 2. Accionem **FLASK**
 # Mode remot o local
 Para cambiar entre el modo local(Empleando el RSS descargado) o el modo remoto (accedemos al RSS desdde la URL). Ejecutamos las siguientes funciones del archivo app.py
-```python
+```python3
 
 @app.route('/lavanguardia/<seccio>')
 def lavanguardia(seccio):
