@@ -138,6 +138,27 @@ En este caso seria:
 ```
 
 **Si deseas saber mas sobre Jinja2 puedes visitar el siguiente enlace** https://jinja.palletsprojects.com/en/3.1.x/
+
+#### Feedparser
+Es un ayudante cual simplicfica y facilita la obtención de informacion desde archivos como podrian ser los RSS en nuestro caso. 
+Para ello emplea diferentes variables. 
+Se peude usar combinado junto a jinja para poner informacion en un HTML 
+
+ej 
+```html
+
+            <a href="{{item.link}}">{{item.title}}</a> --->Obtenemos el titulo
+            {% for media in item.media_content %}
+                <p><img src="{{media.url}}" alt="{{item.title}}" /></p> ---> Obtenemos la url de la pagina y el titulo
+            {% endfor %}
+            <p>Descripció {{item.description}}</p>  --->Obtenemos la descripcion
+            <p>Categoria {{item.category}}</p> --->Obtenemos la categoria
+            <p>Autor {{item.author}}</p> --->Obtenemos el autor
+            <p>Data de creació {{item.published}}</p> --->Obtenemos la fecha de publicacion
+            <p>Data d'modificació {{item.updated}}</p> --->Obtenemos la fecha de actualizacón
+
+
+```
  
 # Pasos a seguir para iniciar el aplicativo
 
