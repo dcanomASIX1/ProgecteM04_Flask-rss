@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-# Despliegue de nuestro entorno virtual
-## Instalación de pip
 
-=======
-# Exemple de README
-Això és un [enllaç](https://google.com) i això són **negretes** i *cursiva* i ara ve una llista:
->>>>>>> web
-
-Empezaremos instalando el paquete pip. Este se empelará para instalar a nuestro entrono virtual que crearemos a cotinuación.
+#  Empezaremos instalando el paquete pip. Este se empelará para instalar a nuestro entrono virtual que crearemos a cotinuación.
 
 ```
 
