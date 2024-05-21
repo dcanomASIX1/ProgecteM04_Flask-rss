@@ -161,7 +161,7 @@ ej
 
 1. Empezamos aciconando el entorno vitual .venv
 2. Accionamos **FLASK**
-# Modo remoto o local
+# Modo remoto o local de RSS
 Para cambiar entre el modo local(Empleando el RSS descargado) o el modo remoto (accedemos al RSS desdde la URL). Ejecutamos las siguientes funciones del archivo app.py
 ```python3
 
